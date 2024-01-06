@@ -1,13 +1,16 @@
-import React, { useState } from 'react'
+
+import { useState } from 'react'
 import './TodoList.css'
 
 const TodoList = () => {
-    const [todos, setTodos] = useState([]);
-    const [newTodo, setNewTodo] = useState('')
+  const [activity, setActivity] = useState('')
   return (
-    <div>
-        <h1>To-Do List</h1>
+    <>
+    <div className='container'>
+        <div className='header'>ToDo List</div>
+        <input type="text" placeholder='Add Activity' value={activity}/>
     </div>
+    </>
   )
 }
 
